@@ -303,22 +303,68 @@
     <!-- footer-->
     <div class="container-fluid border border-dark mt-4 footer">
         <div class="row">
-            <div class="col">
-                <p class="fs-6 mb-0 me-2 text-light">Telefono de contacto: +56912345678</p>
+            <div class="col-md-6">
+                <div class="container-fluid container-form">
+                    <h4 class="text-dark text-center">Contáctenos!</h4>
+                    <form class="row">
+                        <div class="col-md-6">
+                            <label for="primer-nombre" class="form-label">Primer Nombre</label>
+                            <input type="text" class="form-control" id="primer-nombre" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="apellido" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="correo-electronico" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="correo-electronico" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="telefono" placeholder="+5691235678" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="seleccion" class="form-label">Tipo de Formulario</label>
+                            <select class="form-select" aria-label="seleccion">
+                                <option value="1">Consulta</option>
+                                <option value="2">Reclamo</option>
+                              </select>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="comentario" class="form-label">Comentario</label>
+                            <textarea class="form-control" id="comentario" rows="3"></textarea>
+                        </div>
+                        <div class="col-md-12 text-center boton">
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                        </div>
+                    </form>
+                    <p class="fs-6 mb-0 me-2 text-dark text-center fw-semibold">Telefono de contacto: +56912345678</p>
+                </div>
             </div>
-            <div class="col d-flex align-items-center text-light">
-                <img src="imagenes/logo_instagram.png" alt="" width="30" height="30">
-                <p class="fs-6 mb-0 me-2">@Aniquilador_del_hambre</p>
-            </div>
-        
-            <div class="col d-flex align-items-center text-light">
-                <img src="imagenes/logo_facebook.png" alt="" width="30" height="30">
-                <p class="fs-6 mb-0 me-2">@AniquiladorDelHambre</p>
-            </div>
-            
-            <div class="col d-flex align-items-center text-light">
-                <img src="imagenes/logo_x.png" alt="" width="30" height="30">
-                <p class="fs-6 mb-0 me-2">@Aniquilador_del_hambreX</p>
+            <div class="col-md-6 g-0">
+                <div class="container-fluid redes-sociales">
+                    <div class="row">
+                        <h3>Nuestras redes sociales!</h3>
+                    </div>
+                    <div class="row row-cols-3">
+                        <div class="col-md-4 d-flex align-items-center text-light">
+                            <img src="imagenes/logo_instagram.png" alt="" width="30" height="30">
+                            <p class="fs-6 mb-0 me-2">@Aniquilador_del_hambre</p>
+                        </div>
+                    
+                        <div class="col-md-4 d-flex align-items-center text-light">
+                            <img src="imagenes/logo_facebook.png" alt="" width="30" height="30">
+                            <p class="fs-6 mb-0 me-2">@AniquiladorDelHambre</p>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center text-light">
+                            <img src="imagenes/logo_x.png" alt="" width="30" height="30">
+                            <p class="fs-6 mb-0 me-2">@Aniquilador_del_hambreX</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="Imagenes/local_footer.png" class="footer-img" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

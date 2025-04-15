@@ -119,13 +119,14 @@ footer {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
-    margin: 0 0 20px;
+    margin: 10px 0 20px;
     text-align: center;
   }
 
   .testimonios{
     padding: 80px;
     margin-top: 20px;
+    margin-bottom: 0;
   }
 
   .testimonios .carta-vertical{
@@ -175,6 +176,7 @@ footer {
 
   .carta-sucursal{
     padding: 0;
+    margin-bottom: 20px;
   }
   
   .container-fluid h3{
@@ -192,7 +194,41 @@ footer {
     border-bottom-right-radius: 0px;
   }
   
+  .container-form{
+    background-color:rgb(223, 219, 208) ;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    }
 
+  .redes-sociales{
+    background-color: #696565;
+    }
+
+  .redes-sociales h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 0px;
+    text-align: center;
+    }
+
+  .footer-img{
+    width: 1000px;
+    height: 387px;
+    object-fit: cover;
+    padding-bottom: 5px;
+    border-radius: 15px;
+  }
+
+  .row .boton{
+    margin: auto;
+    padding: 10px;
+  }
+  .row input, .row select{
+    margin-bottom: 10px;
+  }
+  
   @media (max-width: 768px) {
     
     .img-nav2{
