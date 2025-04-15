@@ -19,6 +19,7 @@ footer {
     font-size: 50px;
     margin: 40px 0 40px;
     text-align: center;
+    background-color: 	#c5b292af;
     color: #3E2723;
   }
 
@@ -60,6 +61,7 @@ footer {
     max-height: 100%; */
     object-fit: cover;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .left-column h4{
@@ -92,7 +94,7 @@ footer {
 .ingredientes-lista {
     margin-top: auto;
     margin-bottom: auto;
-    text-align: justify;
+    text-align: center;
     color: #FCF4E8;
   }
 
@@ -128,9 +130,12 @@ footer {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     border-radius: 15px;
-    padding: 10px;
-    background-color: #EAD2AC; 
+    padding: 30px;
+    background-color: #EAD2AC;
     margin-top: 200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .card-img{
@@ -148,7 +153,18 @@ footer {
     color: #3E2723;
   }
   .card-title{
-    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 10px 0 20px;
+    text-align: center;
+    background-color: #c2ad8d;
+    color: #3E2723;
+  }
+  .sucursal-card-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
     color: #3E2723;
   }
 
@@ -214,28 +230,41 @@ footer {
     color: #3E2723;
   }
 
-  .sucursales{
+  .sucursales {
     margin-bottom: 100px;
   }
-
-  .carta-sucursal{
+  
+  .carta-sucursal {
     padding: 0;
     margin-bottom: 20px;
   }
   
-  .container-fluid h3{
+  .img-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .img-wrapper img,
+  .img-wrapper iframe {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 4px;
+    max-height: 120px;
+  }
+  
+  .container-fluid h3 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 30px;
-    margin: 0 0 20px;
+    margin-bottom: 20px;
     text-align: center;
   }
-
-  .carta-sucursal img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-bottom-right-radius: 0px;
+  
+  .small-text {
+    font-size: 0.9rem;
+    line-height: 1.2;
   }
   
   .container-form{
@@ -261,7 +290,7 @@ footer {
 
   .footer-img{
     width: 1000px;
-    height: 387px;
+    height: 450px;
     object-fit: cover;
     padding-bottom: 5px;
     border-radius: 15px;
@@ -277,7 +306,6 @@ footer {
 
   
   @media (max-width: 768px) {
-    
     .img-nav2{
         display: none;
     }
