@@ -3,7 +3,7 @@ body {
     position: relative;
     min-height: 100vh;
     margin: 0;
-    background-color:rgb(223, 219, 208) ;
+    background-color:#F5F0E6	 ;
   }
 
 footer {
@@ -11,19 +11,19 @@ footer {
 }
 
 .navbar{
-    background-color: #696565;
+    background-color: 	#EAD2AC;
 }
 
 .menu-text{
     font-weight: 700;
     font-size: 50px;
-    margin: 20px 0 20px;
+    margin: 40px 0 40px;
     text-align: center;
-    color: black;
+    color: #3E2723;
   }
 
 .container-fluid{
-    background-color:rgb(223, 219, 208) ;
+    background-color:#F5F0E6 ;
 }
 .grid-container {
     display: grid;
@@ -37,7 +37,7 @@ footer {
 .grid-item {
     display: flex;
     height: 100%;
-    background-color:rgba(0, 0, 0, 0.562);
+    background-color:rgba(62, 39, 35, 0.8);
     border-radius: 5px;
     text-align: center;
     position: relative;
@@ -54,8 +54,10 @@ footer {
 }
 
 .left-column img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 400px;
+    height: 240px;
+    /* max-width: 100%;
+    max-height: 100%; */
     object-fit: cover;
     padding: 10px;
 }
@@ -69,16 +71,36 @@ footer {
     width: 35%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
-    color: white;
+    color: #FCF4E8;
     height: 100%;
 }
 
 .text {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    margin-top: 20px;
 }
+
+.ingredientes-titulo{
+    margin: 0 0 10px;
+  padding: 0;
+}
+
+.ingredientes-lista {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: justify;
+    color: #FCF4E8;
+  }
+
+  .precio {
+    margin-top: auto;
+    padding-top: 10px;
+    color: #FCF4E8;
+  }
 
 .carousel-control-prev {
     width: 5%;
@@ -89,16 +111,26 @@ footer {
   }
   
   .background{
-    background-color: rgb(223, 219, 208);
+    background-color: #F5F0E6;
     padding-top: 4rem;
     padding-bottom: 2rem;  
   }
 
   .card{
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     border-radius: 15px;
     padding: 10px;
+    background-color: #EAD2AC; 
+  }
+
+  .card-historia{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EAD2AC; 
+    margin-top: 200px;
   }
 
   .card-img{
@@ -113,7 +145,13 @@ footer {
 
   .card-text{
     text-align: justify;
+    color: #3E2723;
   }
+  .card-title{
+    text-align: justify;
+    color: #3E2723;
+  }
+
 
   .container h3{
     text-transform: uppercase;
@@ -125,14 +163,15 @@ footer {
 
   .testimonios{
     padding: 80px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
   }
 
   .testimonios .carta-vertical{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     border-radius: 15px;
+    background-color: #EAD2AC;
   }
 
   .col-md-4{
@@ -148,11 +187,11 @@ footer {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 7px solid#afa195;
+    border: 7px solid #F28500;
   }
 
   .carta-vertical:hover img{
-    border-color: darkcyan;
+    border-color: #A42A1E;
     transition: .7s;
   }
 
@@ -166,12 +205,17 @@ footer {
     font-weight: 700;
     font-size: 20px;
     margin: 0 0 20px;
+    color: #3E2723;
   }
 
   .main-text p{
     font-size: 16px;
     padding: 0 35px;
+    color: #3E2723;
+  }
 
+  .sucursales{
+    margin-bottom: 100px;
   }
 
   .carta-sucursal{
@@ -195,9 +239,10 @@ footer {
   }
   
   .container-form{
-    background-color:rgb(223, 219, 208) ;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    background-color: #EAD2AC;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     }
 
@@ -211,6 +256,7 @@ footer {
     font-size: 30px;
     margin: 0 0 0px;
     text-align: center;
+    color: white;
     }
 
   .footer-img{
@@ -228,6 +274,7 @@ footer {
   .row input, .row select{
     margin-bottom: 10px;
   }
+
   
   @media (max-width: 768px) {
     
