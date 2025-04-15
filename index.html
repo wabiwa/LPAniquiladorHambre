@@ -10,26 +10,26 @@
     <title>Aniquilador del hambre</title>
 
 </head>
-<body class="bg-secondary-subtle">
+<body>
     <!-- Header -->
     <nav class="navbar border border-dark">
         <div class="container">
             <img class="img-nav1" src="Imagenes/logo_aniquilador.png" alt="" width="100" height="100">
             <div class="text">
-                <h1 class="text-center text-light">El Aniquilador del Hambre</h1>
+                <h1 class="text-center text-dark">El Aniquilador del Hambre</h1>
                 <h5 class="text-center">Sabores que no perdonan</h5>
             </div>
             <img class="img-nav2" src="Imagenes/logo_aniquilador.png" alt="" width="100" height="100">
         </div>  
     </nav>
-    
+    <h3 class="menu-text">Menús que te dan Hambre</h3>
     <!-- Carrusel-->
-    <div id="carousel_menu" class="carousel slide" data-bs-ride="carousel" data-bs-keyboadr="true">
+    <div id="carousel_menu" class="carousel slide" data-bs-ride="carousel" data-bs-keyboad="true">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!-- Primer item del carrusel "Sandwiches" -->
                 <div class="container-fluid">
-                    <h2 class="text-center text-light">Sandwiches</h2>
+                    <h2 class="text-center text-dark">Sandwiches</h2>
                     <div class="grid-container"> 
                         <div class="grid-item">
                             <div class="left-column">
@@ -178,11 +178,11 @@
             </div>
         </div>
         <!-- Botones -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_menu" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel_menu" data-bs-slide="prev" id="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carousel_menu" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel_menu" data-bs-slide="next" id="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -191,25 +191,115 @@
     <!-- Historia de la empresa -->
     <div class="background">
         <div class="container">
-            <div class="card">
-                <div class="row g-0 align-items-stretch">
-                    <div class="col-6 col-md-5 d-flex">
+            <!-- Carta de la historia -->
+            <div class="card card-historia">
+                <div class="row g-0 align-items-stretch flex-md-row flex-column">
+                    <div class="col-6 col-md-5 d-flex historia-img">
                         <img src="Imagenes/restaurant_2.jpg" class="card-img img-fluid rounded-start" alt="restaurant">
                     </div>
                     <div class="col-6 col-md-7 d-flex">
                         <div class="card-body d-flex flex-column justify-content-center">
-                            <h2 class="card-title mb-5">¿Como comenzó?</h3>
+                            <h2 class="card-title mb-5">¿Como comenzó?</h2>
                             <p class="card-text fs-6 mb-5 lh-lg">
                                 "El Aniquilador del Hambre comenzó como un pequeño proyecto en un carrito de comida que llamábamos "La chancha" al que iban mis amigos y familia. Sin embargo, gracias a que un famoso streamer vino un día a comer muchos más clientes llegaron, al principio me acuerdo que fueron 10 clientes nuevos, todos pidieron la misma comida que el streamer famoso, con el tiempo empezaron a venir más y más clientes. Tantos clientes que "La chancha" no daba abasto y decidimos expandirnos y arrendar una tiendita, la personalizamos para que tenga esas mismas vibras de relajo que daba "la chanchita" y esa fue la mejor decisión que he tomado en mi vida. A la gente le gusta mucho la comida que hacemos por la personalidad que le damos, gracias a esto ahora tenemos 3 sucursales y somos un restauran reconocido en todo chile, han llegado incluso clientes del extranjero a probar la comida. Este éxito se lo debo a mi familia y amigos que me apoyaron durante todo el proceso y a aquel streamer que fue uno de los primeros en arriesgarse a probar algo nuevo." 
                             </p>
                             <p class="card-text fs-6 fst-italic fw-semibold">Dueño de la empresa-</p>
                         </div>
                     </div>
+                </div> 
+            </div>
+        </div>
+        <!-- Testimonios de clientes -->
+        <div class="testimonios">
+            <div class="container">
+                <h3>Algunos clientes dicen</h3>
+                <div class="row gy-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 carta-vertical">
+                            <img src="Imagenes/persona1.png" alt="">
+                            <div class="main-text">
+                                <h2>Persona 1</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis animi distinctio, ipsa temporibus fugiat tempore cumque quo veniam facere illum, doloribus tenetur iusto, saepe earum cum laboriosam sed laborum sequi harum? Officia consequatur illum nisi suscipit fugit optio minima velit?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 carta-vertical">
+                            <img src="Imagenes/persona2.png" alt="">
+                            <div class="main-text">
+                                <h2>Persona 2</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi soluta minus temporibus voluptatum minima natus repellat adipisci laboriosam exercitationem, repudiandae reprehenderit eos rem laudantium est enim fuga aut nesciunt hic perferendis non. Ipsam praesentium doloribus corporis debitis tenetur, ipsa adipisci.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card h-100 carta-vertical">
+                            <img src="Imagenes/persona3.png" alt="">
+                            <div class="main-text">
+                                <h2>Persona 3</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus similique repellendus magnam, expedita sequi, architecto mollitia aut aperiam ipsam ea commodi quaerat itaque amet vero aspernatur? Ipsum veritatis molestias magnam quisquam error! Possimus accusamus inventore temporibus maxime, iure ut ducimus.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
             </div>
         </div>
     </div> 
+    
+    <!-- Sucursales -->
+    <div class="container-fluid">
+        <h3>Nuestras sucursales</h3>
+        <!-- sucursal 1-->
+         <div class="row g-4">  
+            <div class="col-lg-4">
+                <div class="card carta-sucursal">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-7">
+                            <img src="Imagenes/local1.png" class="card-img img-fluid rounded-start" alt="local1">
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <div class="card-body d-flex flex-column">
+                                wenas
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card carta-sucursal">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-7">
+                            <img src="Imagenes/local1.png" class="card-img img-fluid rounded-start" alt="local1">
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <div class="card-body d-flex flex-column">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse quidem iure minus veniam id. 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card carta-sucursal">
+                    <div class="row g-0">
+                        <div class="col-6 col-md-7">
+                            <img src="Imagenes/local1.png" class="card-img img-fluid rounded-start" alt="local1">
+                        </div>
+                        <div class="col-6 col-md-5">
+                            <div class="card-body d-flex flex-column">
+                                wenas
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- footer-->
     <div class="container-fluid border border-dark mt-4 footer">
         <div class="row">
